@@ -79,6 +79,11 @@ def main(argv):
 Direccion MAC        : {mac}
 Fabricante           : {fabricante}
 Tiempo de respuesta  : {tiempo_respuesta:.0f} ms""")
+        else:
+            print(f"""
+Direccion MAC        : {mac}
+Fabricante           : Not found
+Tiempo de respuesta  : {tiempo_respuesta:.0f} ms""")
     elif arp:
         #bbtener la tabla ARP y procesar cada direccion MAC
         direcciones_mac = obtener_tabla_arp()
